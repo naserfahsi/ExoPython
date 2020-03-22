@@ -1,0 +1,59 @@
+#Temperature-Processor
+
+temperatures_C = [33, 66, 65, 0, 59, 60, 62, 64, 70, 76, 80, 81, 80, 83, 90, 79, 61, 53, 50, 49, 53, 48, 45, 39]
+nombre_element = len(temperatures_C)
+print (nombre_element)
+
+
+#2. Find the maximum temperature of the day and store it in a variable.
+
+max=temperatures_C[0]
+for i in range(0,len(temperatures_C)):
+    if temperatures_C[i]>max:
+        max=temperatures_C[i]
+print(max)
+
+
+#1. Find the minimum temperature of the day and store it in a variable.
+min=temperatures_C[0]
+for i in range(0,len(temperatures_C)):
+    if temperatures_C[i]<min:
+        min=temperatures_C[i]
+print(min)
+
+
+#3. Create a list with the temperatures that are greater than or equal to 70ºC. Store it in a variable
+
+
+temperatures_C = [33, 66, 65, 0, 59, 60, 62, 64, 70, 76, 80, 81, 80, 83, 90, 79, 61, 53, 50, 49, 53, 48, 45, 39]
+grater_supequal_70 =[]
+for i in range(0,len(temperatures_C)):
+    if temperatures_C[i]>=70:
+        grater_supequal_70.append(temperatures_C[i])
+print(grater_supequal_70)
+
+#4. Find the average temperature of the day and store it in a variable.
+
+temperatures_C = [33, 66, 65, 0, 59, 60, 62, 64, 70, 76, 80, 81, 80, 83, 90, 79, 61, 53, 50, 49, 53, 48, 45, 39]
+sum=0
+for i in range(0,len(temperatures_C)):
+	sum = sum + temperatures_C[i]
+	moy = sum/(len(temperatures_C))
+
+print (moy)
+
+#6. Bonus: the maintenance staff is from the United States and does not understand the international metric system. Help them by converting the temperatures from Celsius to Fahrenheit.
+"""
+temperatures_C = [33, 66, 65, 0, 59, 60, 62, 64, 70, 76, 80, 81, 80, 83, 90, 79, 61, 53, 50, 49, 53, 48, 45, 39]
+temperatures_F=[]
+for i in range(0,len(temperatures_C)):
+    temperatures_F[i] =((temperatures_C[i]*1.8)+32)
+	temperatures_F.append(temperatures_C[i])
+    print(temperatures_F[i])
+	
+7. Make a decision!
+	
+	
+if 	moy >= 65 or max > 80 or cons =ok
+ print ("le capteur doit etre remplacer)
+"""

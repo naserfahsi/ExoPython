@@ -1,0 +1,19 @@
+gandalf = [10, 11, 13, 30, 22, 11, 10, 33, 22, 22]
+saruman = [23, 66, 12, 43, 12, 10, 44, 23, 12, 17]
+gandalf_wins = 0 
+saruman_wins = 0
+for spells in range(0, len(saruman)):
+    if gandalf[spells] > saruman[spells]:
+        gandalf_wins = gandalf_wins + 1
+    elif saruman[spells] > gandalf[spells]:
+        saruman_wins = saruman_wins + 1
+    else :
+        saruman_wins = saruman_wins
+        gandalf_wins = gandalf_wins
+
+if gandalf_wins > saruman_wins :
+        print ("le vanqueur est gandalf avec un score de ",gandalf_wins)
+
+        
+else :
+        print ("le vanqueur est saruman avec un score de ",saruman_wins

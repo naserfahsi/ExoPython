@@ -1,0 +1,12 @@
+#The Snail and the Well
+
+snail_position = 0 
+daily_distance = 30 
+nightly_distance = 20
+well_height = 125
+days = 0
+while snail_position <= 127 :
+    days = days +1
+    snail_position = snail_position = (daily_distance * days )- (nightly_distance*(days - 1))
+    if (snail_position >= well_height):
+        print(days)
